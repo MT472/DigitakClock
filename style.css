@@ -19,10 +19,9 @@ h2{
 }
 .clock{
     display: flex;
-
 }
 .clock div{
-    margin: .3rem;
+    margin: .3rem; 
     position: relative;
 }
 .clock span{
@@ -37,6 +36,20 @@ h2{
     font-size: 3.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
 }
+@media (max-width : 500px) {
+    .clock span{
+        width : 75px;
+        font-size: 2.5rem;
+    }
+    .clock .text{
+        font-size: .2rem;
+        text-transform: lowercase;
+        letter-spacing: 0;
+    }
+    .clock #ampm{
+        font-size: .7rem;
+    }
+}
 .clock .text{
     height: 30px;
     font-size: .7rem;
@@ -49,7 +62,7 @@ h2{
     bottom: 0;
     width:60px;
     height: 30px;
-    font-size: 20px;
+    font-size: 1.2rem;
     background: green;
 
     position: absolute;
